@@ -1,7 +1,5 @@
 package co.com.agencia.rabbitmq.subscriptor;
 
-import co.com.agencia.exception.TechnicalException;
-import co.com.agencia.exception.message.TechnicalErrorMessage;
 import co.com.agencia.model.stroll.Stroll;
 import co.com.agencia.usecase.paseo.RegisterStrollUseCase;
 import lombok.RequiredArgsConstructor;
@@ -18,17 +16,3 @@ public class EventsHandler {
         return registerStrollUseCase.registerStroll(registerEvent.getData()).then();
     }
 }
-
-/*
-Routing key: register.newstroll
-Payload
-{
-   "name": "probando primer caso de uso",
-   "eventId": "73hd-39jd",
-   "data": {
-       "nombreCiudad": "Cartagena",
-       "sede": "San Bernardo",
-       "imagen": "sanber.jpg"
-   }
-}
-*/

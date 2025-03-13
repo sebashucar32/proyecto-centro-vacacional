@@ -32,3 +32,16 @@ public class RegisterStrollUseCase {
     }
 }
 
+/*
+Routing key: register.newstroll
+Payload
+{
+   "name": "probando primer caso de uso",
+   "eventId": "73hd-39jd",
+   "data": {
+       "nombreCiudad": "Cartagena",
+       "sede": "San Bernardo",
+       "imagen": "sanber.jpg"
+   }
+}
+*/
