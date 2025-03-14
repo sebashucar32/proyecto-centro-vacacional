@@ -1,0 +1,271 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "agencia-viajes": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/agencia-viajes",
+      "sourceRoot": "projects/agencia-viajes/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/agencia-viajes",
+            "index": "projects/agencia-viajes/src/index.html",
+            "browser": "projects/agencia-viajes/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/agencia-viajes/tsconfig.app.json",
+            "assets": [
+              "projects/agencia-viajes/src/favicon.ico",
+              "projects/agencia-viajes/src/assets"
+            ],
+            "styles": [
+              "projects/agencia-viajes/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "agencia-viajes:build:production"
+            },
+            "development": {
+              "buildTarget": "agencia-viajes:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "agencia-viajes:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/agencia-viajes/tsconfig.spec.json",
+            "assets": [
+              "projects/agencia-viajes/src/favicon.ico",
+              "projects/agencia-viajes/src/assets"
+            ],
+            "styles": [
+              "projects/agencia-viajes/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "usuarios": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/usuarios",
+      "sourceRoot": "projects/usuarios/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/usuarios",
+            "index": "projects/usuarios/src/index.html",
+            "browser": "projects/usuarios/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/usuarios/tsconfig.app.json",
+            "assets": [
+              "projects/usuarios/src/favicon.ico",
+              "projects/usuarios/src/assets"
+            ],
+            "styles": [
+              "projects/usuarios/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "usuarios:build:production"
+            },
+            "development": {
+              "buildTarget": "usuarios:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "usuarios:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/usuarios/tsconfig.spec.json",
+            "assets": [
+              "projects/usuarios/src/favicon.ico",
+              "projects/usuarios/src/assets"
+            ],
+            "styles": [
+              "projects/usuarios/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "gimnasio": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/gimnasio",
+      "sourceRoot": "projects/gimnasio/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/gimnasio",
+            "index": "projects/gimnasio/src/index.html",
+            "browser": "projects/gimnasio/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/gimnasio/tsconfig.app.json",
+            "assets": [
+              "projects/gimnasio/src/favicon.ico",
+              "projects/gimnasio/src/assets"
+            ],
+            "styles": [
+              "projects/gimnasio/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "gimnasio:build:production"
+            },
+            "development": {
+              "buildTarget": "gimnasio:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "gimnasio:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/gimnasio/tsconfig.spec.json",
+            "assets": [
+              "projects/gimnasio/src/favicon.ico",
+              "projects/gimnasio/src/assets"
+            ],
+            "styles": [
+              "projects/gimnasio/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  }
+}
